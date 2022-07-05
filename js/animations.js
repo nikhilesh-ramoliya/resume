@@ -126,14 +126,14 @@ navli.forEach((item) => {
 });
 
 
-var portfolioItem = document.querySelectorAll(".portfolio-item");
-portfolioItem.forEach((item) => {
+var contactinfo_items = document.querySelectorAll(".portfolio-item");
+contactinfo_items.forEach((item) => {
   item.addEventListener("mouseover", () => {
     gsap.to(item, {
       duration: 0.5,
       opacity: 1,
       ease: "power3.out",
-      scale: 1.1
+      scale: 1.2
     });
   })
   item.addEventListener("mouseout", () => {
@@ -144,5 +144,24 @@ portfolioItem.forEach((item) => {
       scale: 1,
     });
   })
+});
 
+var contactinfo_items = document.querySelectorAll(".contact-info-item");
+contactinfo_items.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    gsap.to(item, {
+      duration: 0.5,
+      opacity: 1,
+      ease: "power3.out",
+      scale: 1.2
+    });
+  })
+  item.addEventListener("mouseout", () => {
+    gsap.to(item, {
+      duration: 0.5,
+      opacity: 0.5,
+      ease: "power3.out",
+      scale: 1,
+    });
+  })
 });

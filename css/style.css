@@ -482,7 +482,7 @@ h3.my-profession {
     position: relative;
     left: 90%;
     top: -55px;
-    color: black;
+    color: var(--text-balck-900);
     font-weight: 400;
     line-height: 40px;
     z-index: 10;
