@@ -697,26 +697,27 @@ h3.my-profession {
     max-width: 25%;
     text-align: center;
     margin-bottom: 60px;
+    text-decoration: none;
 }
 
 .contact-info-item .icon {
     display: inline-block;
+    text-decoration: none;
 }
 
 .contact-info-item .icon .fa {
+    text-decoration: none;
     font-size: 25px;
     color: var(--skin-color);
 }
 
 .contact-info-item h4 {
+    text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     color: var(--text-balck-900);
     text-transform: capitalize;
     margin: 15px 0 5px;
-}
-.contact-info-item{
-    text-decoration: none;
 }
 
 
