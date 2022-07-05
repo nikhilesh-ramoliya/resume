@@ -715,12 +715,17 @@ h3.my-profession {
     text-transform: capitalize;
     margin: 15px 0 5px;
 }
+.contact-info-item{
+    text-decoration: none;
+}
+
 
 .contact-info-item p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-balck-700);
     font-weight: 400;
+    text-decoration: none;
 }
 
 .contact .contact-form {
