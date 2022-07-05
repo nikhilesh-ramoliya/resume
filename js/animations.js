@@ -139,7 +139,7 @@ portfolioItem.forEach((item) => {
   item.addEventListener("mouseout", () => {
     gsap.to(item, {
       duration: 0.5,
-      opacity: 0.7,
+      opacity: 0.5,
       ease: "power3.out",
       scale: 1,
     });
