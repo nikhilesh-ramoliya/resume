@@ -147,7 +147,9 @@ ul {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    background-color: var(--skin-color);
+    color: var(--bg-black-900 );
 }
 
 /* aside */
@@ -266,7 +268,9 @@ ul {
 .aside .nav li {
     margin-bottom: 20px;
     display: block;
-
+    opacity: 0.5;
+    text-align: center;
+    width: 200px;
 }
 
 .aside .nav li a {

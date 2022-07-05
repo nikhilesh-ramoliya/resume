@@ -21,3 +21,5 @@ document.querySelectorAll(".section").forEach(section => {
         document.querySelector(".aside").classList.remove("open-nav");
     });
 });
+
+
