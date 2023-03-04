@@ -1,28 +1,31 @@
 const tl = new TimelineMax();
 tl.from(".home .container .home-info h3", 1, {
   opacity: 0,
-  y: -100,
+  y: -1000,
   ease: "power3.out",
   delay: 0,
 });
 tl.from(".home .container .home-info p", 1, {
   opacity: 0,
-  x: -100,
+  x: "-100vw",
   ease: "power3.out",
   delay: 0,
-});
+}, 0);
 tl.from(
   ".home .container .home-info .btn",
   1,
   {
+    y: 1000,
     opacity: 0,
     ease: "power3.out",
     delay: 0,
   },
   0
 );
-tl.timeScale(2);
-tl.delay(0.5);
+tl.timeScale(1);
+tl.pause();
+
+
 
 gsap.from(".about .education", {
   scrollTrigger: {

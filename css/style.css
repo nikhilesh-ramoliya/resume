@@ -19,19 +19,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: preload 1s ease-in;
-    animation-fill-mode: forwards;
+}
+
+#preLoader p {
+    animation: preload 0.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
+
 }
 
 @keyframes preload {
     0% {
-        transform: scale(1);
+        transform: scale(1) rotate(0);
     }
 
     100% {
-        transform: scale(2);
-        display: none;
+        transform: scale(2) rotate(360deg);
+        /* transform: rotate(360deg); */
     }
 }
 
@@ -50,6 +55,10 @@ body {
     font-style: 16px;
     width: 100vw;
     font-family: 'Poppins', sans-serif;
+}
+
+#allContent {
+    /* display:none; */
     animation: body;
     animation-duration: 1s;
     animation-delay: 1s;
