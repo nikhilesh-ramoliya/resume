@@ -33,7 +33,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
 
-<body class="dark">
+
+<body class="dark" id="body">
+  <div id="preLoader">
+    Nikhil
+  </div>
   <!-- ! main Container start -->
   <div class="main-container">
     <!-- ! aside start -->
@@ -561,5 +565,14 @@
 <script src="./js/script.js"></script>
 <script src="./js/style-switcher.js"></script>
 <script src="./js/animations.js"></script>
+<script>
+  var loader = document.getElementById("preLoader")
+  var body = document.getElementById("body");
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      loader.style.display = "none"
+    }, 1000)
+  })
+</script>
 
 </html>
